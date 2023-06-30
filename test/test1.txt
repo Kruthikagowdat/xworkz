@@ -1,0 +1,162 @@
+1.31(b)
+2.30(c)
+3.100(a)
+4.63(c)
+5.43(c)
+6.K(b)
+7.P(a)
+8.FR(b)
+9.bccab(c)
+10.GOV(a)
+11.2
+12.38
+13.Window
+14.Sun
+15.BE
+
+
+JAVA 
+
+1.java: Java is object oriented programming and high level language.
+       * If we need to run the program we should hava ".java" extension.
+	   
+  javac: javac is java compiler which helps to run the program.
+	   * While complie the program it should have commad "javac filename.java"
+  
+  
+2.JDK[Java Development Kit]: It is used for developing the programs like java.
+
+  JRE[Java Runtime Enivronment]: It is used for runtime (or) complie time with the libaray fuctions.
+   
+  JVM[Java Virtual Machine]:Itis platform to run the program with  virtual machine .
+  
+  
+3.Limitations of array:
+	*We can only store similar type of datatypes.
+	*We should sort the elements.
+	*We cannot directly initialize the array.
+	*It has fixed size.
+	*Insertion and deletion is difficult.
+	
+
+4.class:class is non primitive, which contains objects and variables.
+		Syntax: class class_name{
+		
+				}
+		ex:     class Test{
+		
+				}
+
+
+  object:It is real world entity
+  
+  Signature of the class: It as access specifers, class and object.
+  
+5.Array:Array is a collection of tables and columns under the same elements and it is a data structure and non primitive.
+        Syntax:
+				datatype[] variable_name={n1,n2,n3..};
+		Ex:
+				String[] snacks={"Gobi", "Pani puri", "chips", "cake"}
+				
+
+6.  .java file: .java file is written in english by humans and it can be read, write or update it.
+
+	.class file: .class file it is platform independent where javac compiles the java program and then it creates a .class file where it can be compiled in any java platform .
+	
+7.length=6
+	
+	
+8.Method signature: method signature which have method name and parameter name.
+	syntax:class Test{
+				
+			static void java{
+					System.out.print("First test\n");
+			}
+			
+			public static void main(String[] args){
+				Test.java();
+			}
+		}
+
+
+9.Java: Java is high level language programming with platform independent. It isliableobject oriented, secured and  reliable.
+
+
+10. variable: variable are used to store the reference values.
+			sytnax:
+					data_type variable_name;
+			ex:
+					int marks;
+
+11.class variable: class variable is also known as static variable.
+			syntax: static data_type variable_name{
+					}
+			ex:   static String marks{
+					}
+					
+
+12.datatype:It is used to declare the variables.
+	types of datatype
+		i.primitive:it as
+						-byte
+						-short
+						-int
+						-long
+						-float
+						-double
+						-char
+						-boolean
+						
+		ii.non-primitive:It as
+						-String
+						-class
+						
+13. Features of  Java
+	*platform independent
+	*High performance
+	*Easy to learn
+	*Object Oriented Programming
+	*Memory management
+	
+14.Types of array
+	i.1D[One dimensional array]: It is used for linear sequnece.
+			ex: int[] num={1,3,4,5};
+			
+	ii.2D[Two dimensional array]: It is used for rows and columns.
+			ex: int[] row={2,4,6,8};
+				int[] columns={1,3,5,6}
+	iii.Multi dimensional array: It is used for More than 2D 
+	
+16. System.out.println("");  
+		It is used to print the message.
+	System.out.println(""); 
+		where, System is pre-defined class name
+			   out is static variable
+			   println is static method
+			   ("") is Statement
+			   . ; is operator
+			   
+			   
+17.== is used to comparing two variables (or) checking it is equal or not
+
+
+18. . operator is used to access the class, methods and members.
+
+
+19.Base class of all the classes is object.
+		class Mytest{
+		
+		}
+
+
+20.keywords
+	* static
+	* void
+	* String
+	* int
+	* byte
+	* long
+	* double
+	* if
+	* else
+	* short
