@@ -1,6 +1,6 @@
 class KinderJoy{
 	double price;
-	int quality;
+	int quantity;
 	boolean toy;
 	
 	KinderJoy()
@@ -14,18 +14,18 @@ class KinderJoy{
 		this.price=price;
 	}
 	
-	KinderJoy(double price,int quality)
+	KinderJoy(double price,int quantity)
 	{
 		System.out.println("Running kinderjoy with double and int ");
 		this.price=price;
-		this.quality=quality;
+		this.quantity=quantity;
 	}
 	
-	KinderJoy(double price,int quality,boolean toy)
+	KinderJoy(double price,int quanlity,boolean toy)
 	{
 		System.out.println("Running kinderjoy with double, int and boolean");
 		this.price=price;
-		this.quality=quality;
+		this.quantity=quantity;
 		this.toy=toy;
 	}
 }
