@@ -1,0 +1,187 @@
+					Test-2
+
+1.Maternal uncle(d)
+2.GrandFather(b)
+3.Cousin(b)
+4.Son(c)
+5.GrandSon(c)
+6.X+A*Y(c)
+7.R/S
+8.Brother-in-law/Brother
+9.Father(a)
+10.R/S
+11.10km(a)
+12.West(d)
+13.North-East(c)
+14.South-East(b)
+
+				Java
+				
+1. Error: Compile time Error
+ (int cannot be converted to boolean)
+
+2. 10, 100
+
+3.Error: There is no condition to check the if statement.
+
+4.The main() method is static so that JVM can invoke it without instantiating the class. 
+This also saves the unnecessary wastage of memory which would have been used by the object declared only for calling the main() method by the JVM.
+
+5.public class Reverse {
+    public static void main(String[] args) {
+        int[] rev = {10, 45, 7, 9, 2};
+		for(int i=0;i<=5;i++)
+        System.out.println("Original i: " + rev(i));
+        reverseArray(i);
+		for(int i=0;i<=5;i++)
+        System.out.println("Reversed i: " + rev(i));
+    }
+
+    static void reverseArray(int[] i) {
+        int start = 0;
+        int end = i.length - 1;
+        while (start < end) {
+            int temp = i[start];
+            i[start] = i[end];
+            i[end] = temp;
+            start++;
+            end--;
+        }
+    }
+}
+  
+6.import java.util.Arrays;
+import java.util.HashSet;
+
+public class temp {
+    public static void main(String[] args) {
+        int[] input = {2, 5, 4, 8, 2, 3, 6, 2};
+        
+        System.out.println("Original Array: " + Arrays.toString(input));
+        Arrays.sort(input);
+        reverseArray(input);
+        
+        int[] result = removeDuplicates(input);
+        
+        System.out.println("Array in Descending Order without Duplicates: " + Arrays.toString(result));
+    }
+    
+    public static void reverseArray(int[] array) {
+        int start = 0;
+        int end = array.length - 1;
+        
+        while (start < end) {
+        while (start < end) {
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            
+            start++;
+            end--;
+        }
+    }
+    
+    public static int[] removeDuplicates(int[] array) {
+        HashSet<Integer> uniqueValues = new HashSet<>();
+        
+        for (int num : array) {
+            uniqueValues.add(num);
+        }
+        
+        int[] result = new int[uniqueValues.size()];
+        int index = 0;
+        
+        for (int num : uniqueValues) {
+            result[index] = num;
+            index++;
+        }
+        
+        return result;
+    }
+}
+
+7.Done
+
+8.this: this is a keyword in Java that refers to the current instance of a class. It is typically used to refer to the current object's instance variables, methods, or constructors. It is especially useful when there is a need to disambiguate between instance variables and method parameters or local variables that have the same name. For example:
+this is used to refer to the current instance of a class.
+Example:
+public class MyClass {
+   int value;
+    
+    public void setValue(int value) {
+        this.value = value;
+    }
+}
+
+this(): this() is a constructor invocation that refers to another constructor within the same class. It is used to invoke one constructor from another constructor in order to avoid code duplication and initialize the object properly. It must be the first line in the constructor. For example:
+this() is used to invoke another constructor within the same class.
+
+Example:
+public class MyClass {
+    int value;
+    
+    public MyClass() {
+        this(0); 
+    }
+    
+    public MyClass(int value) {
+        this.value = value;
+    }
+}
+
+
+  
+  
+9.Swaping 2no's
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+       
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
+
+10.
+i) &		&
+		&
+   &		&
+   
+   
+class Design
+{
+	public static void main(String args[])
+	{
+		System.out.println("&\t\t&\n\t&\t\n&\t\t&");
+	}
+}
+   
+ii)%	%	%
+   %	&	%
+   %	%	%
+   
+class Design{
+	public static void main(String args[])
+	{
+		System.out.println("%\t%\t%\n%\t&\t%\n%\t%\t%");
+	}
+}
+
+
+iii)%	%	%
+   %		%
+   %	%	%
+   
+class Design{
+	public static void main(String args[])
+	{
+		System.out.println("%\t%\t%\n%\t \t%\n%\t%\t%");
+	}
+}
