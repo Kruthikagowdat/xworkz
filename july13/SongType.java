@@ -1,0 +1,5 @@
+enum SongType {
+	
+	EMOTIONAL,BREAK_UP,ROMANTIC_SONG,HERO_SONG
+	
+}
