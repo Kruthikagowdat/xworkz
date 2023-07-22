@@ -1,0 +1,73 @@
+`				SQL-TEST 
+			
+
+1.creating database
+syntax:
+	CREATE DATABASE database_name;
+	
+2.Creating table
+Syntax:
+	USE DATABASE database_name;
+	CREATE TABLE table_name;
+
+3.add column to existing table
+Syntax:
+	ALTER TABLE table_name
+	ADD COLUMN new_column_name data_type;
+
+4.Droping the table3
+Syntax:
+	DROP TABLE table_name
+
+5.renaming column name
+syntax:
+		ALTER TABLE table_name
+		CHANGE COLUMN old_column_name new_column_name data_type;
+
+6.Change the column datatype
+Syntax:
+		ALTER TABLE table_name
+		ALTER COLUMN column_name data_type;
+
+7.update
+Syntax:
+		UPDATE table_name
+		SET column1 = value1, column2 = value2, ...
+		WHERE condition;
+
+8.delete
+Syntax:
+		DELETE FROM table_name
+		WHERE condition;
+
+9.Query to get position of a character
+sum:Calculate the sum of values in a column
+Syntax:	SELECT SUM(column_name) AS total_sum
+		FROM table;
+
+average:Calculate the average (mean) of values in a column.
+Syntax:SELECT AVG(column_name) AS average_value
+		FROM table;
+
+MAX:Find the maximum value in a column.
+Syntax:SELECT MAX(column_name) AS max_value
+		FROM table;
+
+MIN:Find the minimum value in a column.
+Syntax:SELECT MIN(column_name) AS min_value
+		FROM table;
+
+COUNT:gives total count
+Syntax:SELECT COUNT(*) AS total_rows
+		FROM your_table;
+
+GROUP_BY:Group the results based on a column and perform aggregate functions on each group.
+Syntax:SELECT category, COUNT(*) AS total_products, AVG(price) AS average_price
+		FROM products
+		GROUP BY category;
+
+HAVING:Filter the results of a GROUP BY query based on aggregate function results.
+Syntax:SELECT category, AVG(price) AS average_price
+		FROM products
+		GROUP BY category
+		HAVING AVG(price) > 50;
