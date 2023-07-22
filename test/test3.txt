@@ -1,0 +1,173 @@
+      TEST 3
+	  
+1.error : Illegal start of expression
+
+2.error : Illegal start of expression (Static keyword should be declared before main method).
+
+3.error :  compilation error.
+
+4.Length is 4
+  Sum is 100
+
+6.Parameters method:
+	A method can take parameters, which are input values that you can pass to the method when you call it.
+Parameters allow you to pass data into a method and make the method more flexible and reusable.
+When defining a method, you specify the parameters it will accept within the parentheses after the method name.
+	
+7.compile time polymorphism
+	Compile time polymorphismis also known as overloading.
+Compile-time polymorphism in Java, also known as method overloading, occurs when multiple methods in the same class have the same name but different parameter lists.
+The appropriate method to be called is determined at compile time based on the number and types of arguments passed during the method invocation.
+
+Example:public class Multiplication {
+    public int multi(int a, int b) {
+        return a * b;
+    }
+
+    public double multi(double a, double b) {
+        return a * b;
+    }
+
+    public static void main(String[] args) {
+        Multiplication math = new Multiplication();
+
+        int pro1 = math.multi(5, 5);
+        System.out.println("Product 1: " + pro1);
+
+        double pro2 = math.multi(1.5, 2.5);
+        System.out.println("Product 2: " + pro2); 
+    }
+}
+
+8.Var-args
+	 Varargs is a short form for "variable-length arguments," and it is a feature in Java that allows you to pass a variable number of arguments to a method. It is denoted by using an ellipsis ('...') after the parameter type when declaring the method.
+
+
+9.package
+	A java package is a group of similar types of classes, interfaces and sub-packages.
+	
+	Types of import
+		i.Explicit import
+		ii.Implicit import
+i.Explicit import : Classes are available inside the package, Explicit means direct or when we give the proper path of the java class it will call as explicit import.
+ii.Implicit import : Implicit means indirect, When we load all the classes of the package in our java code by using (*) it will call as implicit import.
+
+10.Constructor chaining
+	Constructor chaining is a mechanism in object-oriented programming where one constructor can call another constructor within the same class or in its superclass.
+this() keyword is used to call another constructor within the same class. 
+the super() keyword is used to call a constructor from the superclass.	
+
+public class Chicken {
+	
+	double price;
+	String location;
+	
+	Chicken(double price , String location){
+		System.out.println("Running double, String in Chicken");
+		this.price = price;
+		this.location = location;
+	}
+
+	
+	void printInfo() {
+		System.out.println("Running print info in Chicken\n");
+		System.out.println("Chicken price : " + price);
+		System.out.println("Chicken Location : " + location);
+	}
+}
+
+public class ChickenRunner {
+
+	public static void main(String[] args) {
+
+		Chicken c1 = new Chicken(370 , "Hassan");
+		c1.printInfo();
+		
+		System.out.println("\n\n");
+		
+		Chicken c2 = new FarmChicken(250 , "Banglore" , 20 , "xyz");
+		c2.printInfo();
+		
+		System.out.println("\n\n");
+
+		
+		Chicken c3 = new BroilerChicken(423, "Mysore", True, 2.5);
+		c3.printInfo();
+	}
+
+}
+
+public class BroilerChicken extends Chicken{
+	
+	boolean alive;
+	double weight;
+	
+	public BroilerChicken(double price, String location, boolean alive, double weight) {
+		super(price, location);
+		this.alive = alive;
+		this.weight = weight;
+	}
+	
+	@Override
+	void printInfo() {
+		System.out.println("Running print Info of Broiler Chicken");
+		super.printInfo();
+		System.out.println("Chicken alive status : " + alive);
+		System.out.println("Chicken weight : " + weight);
+		
+	}
+}
+
+public class FarmChicken extends Chicken {
+	
+	int noOfChicken;
+	String careTakerName;
+	
+	
+	public FarmChicken(double price, String location, int noOfChicken, String careTakerName) {
+		super(price, location);
+		this.noOfChicken = noOfChicken;
+		this.careTakerName = careTakerName;
+	}
+	
+	@Override
+	void printInfo() {
+		System.out.println("Running print Info of Farmchicken");
+		super.printInfo();
+		System.out.println("Number of Chicken : " + noOfChicken);
+		System.out.println("Care Taker Name : " + careTakerName);
+		
+	}
+
+}
+
+
+11.
+
+12.
+
+13.
+
+14.ENUMERATION
+	Enumeration in Java, also known as an enum, is a special data type used to define a fixed set of named constants.
+Enumerations provide a more structured and type-safe way to represent a group of related constant values. 
+
+To define an enumeration, you use the enum keyword.
+example:
+enum Company{
+	HP,DELL,TCS, HCL
+}
+
+15.
+
+16.Members of class
+	-methods
+	-instance variables
+	-static variables
+	-constructor
+	-enums 
+	-annotation
+	
+	
+	
+			
